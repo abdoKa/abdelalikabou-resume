@@ -1,9 +1,10 @@
 import './index.css'
 import {getMyResume} from "./services/getMyResume.js";
 import {useQuery} from "@tanstack/react-query";
-import Intro from './components/introSection/Intro.jsx';
-import Skills from "./components/skills/Skills.jsx";
 import NewSection from "./components/layouts/NewSection.jsx";
+import Intro from "./components/resumeSections/Intro.jsx";
+import Skills from "./components/resumeSections/Skills.jsx";
+import Education from "./components/resumeSections/Education.jsx";
 
 function App() {
     const {data, isLoading, isError} = useQuery(['my-resume'], getMyResume);
@@ -38,6 +39,15 @@ function App() {
                                             languages={data.skills.map(skills => skills.content.programming_languages.map(p_lang => p_lang + ' | '))}
                                             libraries_and_frameworks={data.skills.map(skills => skills.content.libraries_and_frameworks.map(libAndFram => libAndFram + ' | '))}
                                             tools={data.skills.map(skills => skills.content.tools.map(tools => tools + ' | '))}
+                                        />
+                                    </NewSection>
+                                    <NewSection>
+                                        <Education
+                                            title={data.education.map(ed => ed.title)}
+                                            educationTitle={data.education.map(ed => ed.content.map(edTitle => edTitle.title))}
+                                            schoolName={data.education.map(ed => ed.content.map(school => school.school_name))}
+                                            startAt={data.education.map(ed => ed.content.map(startAt => startAt.start_at))}
+                                            endAt={data.education.map(ed => ed.content.map(endAt => endAt.end_at))}
                                         />
                                     </NewSection>
                                 </div>

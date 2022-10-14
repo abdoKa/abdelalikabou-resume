@@ -42,6 +42,19 @@
           ]
         }
       }
+    ],
+    "education": [
+      {
+        "title": "Education",
+        "content": [
+          {
+            "title":"Bachelor of Java/JEE development",
+            "school_name":"University Hassan I Settat - Faculty of Science and Technology of Settat",
+            "start_at":"1st Sept",
+            "end_at":"29 Jul"
+          }
+        ]
+      }
     ]
   }
 }
