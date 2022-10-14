@@ -1,0 +1,42 @@
+{
+  "me": {
+    "intro_section": [
+      {
+        "title": "intro",
+        "content": {
+          "paragraph_one": "I'm currently a Full-Stack developer @LEADZ",
+          "paragraph_two": "Front-End engineer. I'm experienced in developing and designing products for the web, from simple landing pages to full-fledged web apps.",
+          "job_pls": "I'm currently looking for a new challenge as a Front-End React/Next Developer"
+        }
+      }
+    ],
+    "skills": {
+      "languages": [
+        "JavaScript (ES6)",
+        "HTML5",
+        "CSS3",
+        "JAVA",
+        "PHP"
+      ],
+      "libraries_and_frameworks": [
+        "jQuery",
+        "Bootstrap",
+        "Tailwind CSS",
+        "ReactJS",
+        "TypeScript",
+        "Express",
+        "Node",
+        "Symfony5",
+        "MongoDB",
+        "PostgreSQL"
+      ],
+      "tools": [
+        "Git & Github",
+        "Unix Command Line",
+        "Figma",
+        "Postman",
+        "AEM"
+      ]
+    }
+  }
+}

@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-[#181818] text-white;
+}
+
+.left-side {
+    @apply fixed h-full float-left overflow-hidden;
+}
+
+.bg-me {
+    background: url("../src/assets/me.jpg");
+    @apply bg-cover h-full w-full absolute top-0 right-0 bottom-0 left-0 bg-no-repeat aspect-square bg-center;
+}
+
+.bg-me:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #256D85 linear-gradient(to left top, #06283D, #256D85);
+    opacity: 0.4;
+}
+
+.left {
+    @apply w-1/2 h-full float-left text-center overflow-hidden fixed;
+}
+
+.right {
+    float: right;
+}
+
+.right .section-title {
+    @apply md:text-3xl text-2xl uppercase font-bold underline underline-offset-8;
+}
+
+.right-inner  {
+    @apply flex  items-baseline justify-start gap-x-10;
+}
+
+.right-inner .content {
+    @apply text-lg;
+}
+
+.right-inner .content > p {
+    @apply mb-3 font-medium	;
+}
+/*.right .section-title::after {*/
+/*    content: " :";*/
+/*}*/
+
+.left, .right {
+    @apply w-1/2 inline-block align-top;
+}
+
+.left-inner, .right-inner {
+    @apply p-[50px]
+}
