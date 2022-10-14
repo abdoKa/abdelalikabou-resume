@@ -68,6 +68,19 @@
           }
         ]
       }
-    ]
+    ],
+    "projects":
+      {
+        "title": "Projects",
+        "projects_details": [
+          {
+            "id": 1,
+            "name": "Zip code filter for Casablanca Addresses",
+            "description": "simple react app of fetching data",
+            "link": "#"
+          }
+        ]
+      }
+
   }
 }

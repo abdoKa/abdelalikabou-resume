@@ -6,10 +6,11 @@ import Intro from "./components/resumeSections/Intro.jsx";
 import Skills from "./components/resumeSections/Skills.jsx";
 import Education from "./components/resumeSections/Education.jsx";
 import Experience from "./components/resumeSections/Experience.jsx";
+import Projects from "./components/resumeSections/Projects.jsx";
 
 function App() {
     const {data, isLoading, isError} = useQuery(['my-resume'], getMyResume);
-    console.log(data);
+//    console.log(data.projects);
 
     return (
         <main>
@@ -59,6 +60,18 @@ function App() {
                                             startAt={data.experience.map(exp => exp.content.map(startAt => startAt.start_at))}
                                             endAt={data.experience.map(exp => exp.content.map(endAt => endAt.end_at))}
                                         />
+                                    </NewSection>
+                                    <NewSection>
+                                        {data.projects.projects_details.map((project, index) =>
+                                            <Projects
+                                                key={index}
+                                                title={data.projects.title}
+                                                projectName={data.projects.projects_details.map(section => section.name)}
+                                                description={data.projects.projects_details.map(section => section.description)}
+                                                link={data.projects.projects_details.map(section => section.link)}
+                                            />
+                                        )}
+
                                     </NewSection>
                                 </div>
                             </div>
