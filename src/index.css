@@ -35,20 +35,21 @@ body {
 }
 
 .right .section-title {
-    @apply md:text-3xl text-2xl uppercase font-bold underline underline-offset-8;
+    @apply md:text-xl text-lg uppercase font-bold underline underline-offset-8 w-[20%];
 }
 
-.section-container  {
+.section-container {
     @apply flex  items-baseline justify-start gap-20 mb-10;
 }
 
 .right-inner .content {
-    @apply text-lg;
+    @apply text-lg text-justify w-[80%];
 }
 
 .right-inner .content > p {
     @apply mb-3 font-medium;
 }
+
 /*.right .section-title::after {*/
 /*    content: " :";*/
 /*}*/
@@ -58,5 +59,9 @@ body {
 }
 
 .left-inner, .right-inner {
-    @apply p-[50px]
+    @apply p-[50px];
+}
+
+.start-end-date {
+    @apply text-sm font-light;
 }
