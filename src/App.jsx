@@ -5,6 +5,7 @@ import NewSection from "./components/layouts/NewSection.jsx";
 import Intro from "./components/resumeSections/Intro.jsx";
 import Skills from "./components/resumeSections/Skills.jsx";
 import Education from "./components/resumeSections/Education.jsx";
+import Experience from "./components/resumeSections/Experience.jsx";
 
 function App() {
     const {data, isLoading, isError} = useQuery(['my-resume'], getMyResume);
@@ -48,6 +49,15 @@ function App() {
                                             schoolName={data.education.map(ed => ed.content.map(school => school.school_name))}
                                             startAt={data.education.map(ed => ed.content.map(startAt => startAt.start_at))}
                                             endAt={data.education.map(ed => ed.content.map(endAt => endAt.end_at))}
+                                        />
+                                    </NewSection>
+                                    <NewSection>
+                                        <Experience
+                                            title={data.experience.map(ed => ed.title)}
+                                            company={data.experience.map(exp => exp.content.map(company => company.company))}
+                                            jobTitle={data.experience.map(exp => exp.content.map(job => job.job_title))}
+                                            startAt={data.experience.map(exp => exp.content.map(startAt => startAt.start_at))}
+                                            endAt={data.experience.map(exp => exp.content.map(endAt => endAt.end_at))}
                                         />
                                     </NewSection>
                                 </div>

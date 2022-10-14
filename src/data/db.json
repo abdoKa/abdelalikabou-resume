@@ -48,10 +48,23 @@
         "title": "Education",
         "content": [
           {
-            "title":"Bachelor of Java/JEE development",
-            "school_name":"University Hassan I Settat - Faculty of Science and Technology of Settat",
-            "start_at":"1st Sept",
-            "end_at":"29 Jul"
+            "title": "Bachelor of Java/JEE development",
+            "school_name": "University Hassan I Settat - Faculty of Science and Technology of Settat",
+            "start_at": "1st Sept",
+            "end_at": "29 Jul"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "title": "Experience",
+        "content": [
+          {
+            "company": "Leadz - Casablanca",
+            "job_title": "Full-Stack Developer",
+            "start_at": "1st Mar 2020",
+            "end_at": "Present"
           }
         ]
       }
