@@ -10,33 +10,38 @@
         }
       }
     ],
-    "skills": {
-      "languages": [
-        "JavaScript (ES6)",
-        "HTML5",
-        "CSS3",
-        "JAVA",
-        "PHP"
-      ],
-      "libraries_and_frameworks": [
-        "jQuery",
-        "Bootstrap",
-        "Tailwind CSS",
-        "ReactJS",
-        "TypeScript",
-        "Express",
-        "Node",
-        "Symfony5",
-        "MongoDB",
-        "PostgreSQL"
-      ],
-      "tools": [
-        "Git & Github",
-        "Unix Command Line",
-        "Figma",
-        "Postman",
-        "AEM"
-      ]
-    }
+    "skills": [
+      {
+        "title": "SKILLS",
+        "content": {
+          "programming_languages": [
+            "JavaScript (ES6)",
+            "HTML5",
+            "CSS3",
+            "JAVA",
+            "PHP"
+          ],
+          "libraries_and_frameworks": [
+            "jQuery",
+            "Bootstrap",
+            "Tailwind CSS",
+            "ReactJS",
+            "TypeScript",
+            "Express",
+            "Node",
+            "Symfony5",
+            "MongoDB",
+            "PostgreSQL"
+          ],
+          "tools": [
+            "Git & Github",
+            "Unix Command Line",
+            "Figma",
+            "Postman",
+            "AEM"
+          ]
+        }
+      }
+    ]
   }
 }

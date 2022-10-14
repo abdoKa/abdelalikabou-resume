@@ -38,8 +38,8 @@ body {
     @apply md:text-3xl text-2xl uppercase font-bold underline underline-offset-8;
 }
 
-.right-inner  {
-    @apply flex  items-baseline justify-start gap-x-10;
+.section-container  {
+    @apply flex  items-baseline justify-start gap-20 mb-10;
 }
 
 .right-inner .content {
@@ -47,7 +47,7 @@ body {
 }
 
 .right-inner .content > p {
-    @apply mb-3 font-medium	;
+    @apply mb-3 font-medium;
 }
 /*.right .section-title::after {*/
 /*    content: " :";*/

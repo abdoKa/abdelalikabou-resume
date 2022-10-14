@@ -1,8 +1,9 @@
 import './index.css'
 import {getMyResume} from "./services/getMyResume.js";
 import {useQuery} from "@tanstack/react-query";
-import IntroSection from "./components/intro/IntroSection.jsx";
-
+import Intro from './components/introSection/Intro.jsx';
+import Skills from "./components/skills/Skills.jsx";
+import NewSection from "./components/layouts/NewSection.jsx";
 
 function App() {
     const {data, isLoading, isError} = useQuery(['my-resume'], getMyResume);
@@ -23,16 +24,27 @@ function App() {
                             </div>
                             <div className="right">
                                 <div className="right-inner">
-                                    <IntroSection
-                                        title={data.intro_section.map(intro => intro.title)}
-                                        firstParagraph={data.intro_section.map(intro => intro.content.paragraph_one)}
-                                        secondParagraph={data.intro_section.map(intro => intro.content.paragraph_two)}
-                                        JopPls={data.intro_section.map(intro => intro.content.job_pls)}
-                                    />
+                                    <NewSection>
+                                        <Intro
+                                            title={data.intro_section.map(intro => intro.title)}
+                                            firstParagraph={data.intro_section.map(intro => intro.content.paragraph_one)}
+                                            secondParagraph={data.intro_section.map(intro => intro.content.paragraph_two)}
+                                            JopPls={data.intro_section.map(intro => intro.content.job_pls)}
+                                        />
+                                    </NewSection>
+                                    <NewSection>
+                                        <Skills
+                                            title={data.skills.map(skills => skills.title)}
+                                            languages={data.skills.map(skills => skills.content.programming_languages.map(p_lang => p_lang + ' | '))}
+                                            libraries_and_frameworks={data.skills.map(skills => skills.content.libraries_and_frameworks.map(libAndFram => libAndFram + ' | '))}
+                                            tools={data.skills.map(skills => skills.content.tools.map(tools => tools + ' | '))}
+                                        />
+                                    </NewSection>
                                 </div>
                             </div>
                         </div>
-                        : null}
+                        : null
+            }
         </main>
     )
 }

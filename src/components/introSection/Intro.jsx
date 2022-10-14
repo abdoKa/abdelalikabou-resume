@@ -1,6 +1,6 @@
 import React from 'react';
 
-function IntroSection({title, firstParagraph, secondParagraph, JopPls}) {
+function Intro({title, firstParagraph, secondParagraph, JopPls}) {
     return (
         <>
             <h1 className="section-title">{title}</h1>
@@ -13,4 +13,4 @@ function IntroSection({title, firstParagraph, secondParagraph, JopPls}) {
     );
 }
 
-export default IntroSection;
+export default Intro;
