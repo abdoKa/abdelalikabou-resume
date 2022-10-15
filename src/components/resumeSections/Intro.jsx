@@ -4,7 +4,7 @@ function Intro({title, firstParagraph, secondParagraph, JopPls}) {
     return (
         <>
             <h1 className="section-title">{title}</h1>
-            <div className="content">
+            <div className="w-full content">
                 <p>{firstParagraph}</p>
                 <p>{secondParagraph}</p>
                 <p>{JopPls}</p>

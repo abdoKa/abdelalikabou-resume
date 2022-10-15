@@ -43,50 +43,56 @@
         }
       }
     ],
-    "education": [
-      {
-        "title": "Education",
-        "content": [
-          {
-            "title": "Bachelor of Java/JEE development",
-            "school_name": "University Hassan I Settat - Faculty of Science and Technology of Settat",
-            "start_at": "1st Sept",
-            "end_at": "29 Jul"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "title": "Experience",
-        "content": [
-          {
-            "company": "Leadz - Casablanca",
-            "job_title": "Full-Stack Developer",
-            "start_at": "1st Mar 2020",
-            "end_at": "Present"
-          }
-        ]
-      }
-    ],
-    "projects":
-      {
-        "title": "Projects",
-        "projects_details": [
-          {
-            "id": 1,
-            "name": "Zip code filter for Casablanca Addresses",
-            "description": "simple react app of fetching data",
-            "link": "#"
-          },
-          {
-            "id": 2,
-            "name": "abdelalikabou.me my portfolio",
-            "description": "simple react app",
-            "link": "https://abdelalikabou.me"
-          }
-        ]
-      }
-
+    "education": {
+      "title": "Education",
+      "educations": [
+        {
+          "title": "Bachelor of Java/JEE development",
+          "school_name": "University Hassan I Settat - Faculty of Science and Technology of Settat",
+          "start_at": "1st Sept",
+          "end_at": "29 Jul"
+        },
+        {
+          "title": "Diploma in computer science.",
+          "school_name": "Specialized Institute of Applied Technology Polo - OFPPT",
+          "start_at": "1st Sept",
+          "end_at": "01 Jul"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "experiences": [
+        {
+          "company": "Leadz - Casablanca",
+          "job_title": "Full-Stack Developer",
+          "start_at": "1st Mar 2020",
+          "end_at": "Present"
+        },
+        {
+          "company": "Test",
+          "job_title": "Tester",
+          "start_at": "1st Mar 2020",
+          "end_at": "Present"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "projects_details": [
+        {
+          "id": 1,
+          "name": "Zip code filter for Casablanca Addresses",
+          "description": "simple react app of fetching data",
+          "link": "#"
+        },
+        {
+          "id": 2,
+          "name": "abdelalikabou.me my portfolio",
+          "description": "simple react app",
+          "link": "https://abdelalikabou.me"
+        }
+      ]
+    }
   }
 }

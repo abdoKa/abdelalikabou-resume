@@ -43,7 +43,7 @@ body {
 }
 
 .right-inner .content {
-    @apply text-lg text-justify w-[80%];
+    @apply text-lg text-justify;
 }
 
 .right-inner .content > p {

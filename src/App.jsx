@@ -5,7 +5,7 @@ import NewSection from "./components/layouts/NewSection.jsx";
 import Intro from "./components/resumeSections/Intro.jsx";
 import Skills from "./components/resumeSections/Skills.jsx";
 import Education from "./components/resumeSections/Education.jsx";
-import Experience from "./components/resumeSections/Experience.jsx";
+import Experiences from "./components/resumeSections/Experiences.jsx";
 import Projects from "./components/resumeSections/Projects.jsx";
 
 function App() {
@@ -45,20 +45,14 @@ function App() {
                                     </NewSection>
                                     <NewSection>
                                         <Education
-                                            title={data.education.map(ed => ed.title)}
-                                            educationTitle={data.education.map(ed => ed.content.map(edTitle => edTitle.title))}
-                                            schoolName={data.education.map(ed => ed.content.map(school => school.school_name))}
-                                            startAt={data.education.map(ed => ed.content.map(startAt => startAt.start_at))}
-                                            endAt={data.education.map(ed => ed.content.map(endAt => endAt.end_at))}
+                                            title={data.education.title}
+                                            educations={data.education.educations}
                                         />
                                     </NewSection>
                                     <NewSection>
-                                        <Experience
-                                            title={data.experience.map(ed => ed.title)}
-                                            company={data.experience.map(exp => exp.content.map(company => company.company))}
-                                            jobTitle={data.experience.map(exp => exp.content.map(job => job.job_title))}
-                                            startAt={data.experience.map(exp => exp.content.map(startAt => startAt.start_at))}
-                                            endAt={data.experience.map(exp => exp.content.map(endAt => endAt.end_at))}
+                                        <Experiences
+                                            title={data.experience.title}
+                                            experiences={data.experience.experiences}
                                         />
                                     </NewSection>
                                     <NewSection>

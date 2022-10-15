@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Education({title, educations}) {
+function Experiences({title, experiences}) {
     return (
         <>
             <h1 className="section-title">{title}</h1>
             <div className="w-full">
-                {educations && educations.map(({title, school_name, start_at, end_at}, index) =>
+                {experiences && experiences.map(({company, job_title, start_at, end_at}, index) =>
                     <div className="grow-1 content"
                          key={index}
                     >
-                        <p><strong>{title}</strong></p>
-                        <p>{school_name}</p>
+                        <p>{company}</p>
+                        <p><strong>{job_title}</strong></p>
                         <p className="start-end-date"><strong>{start_at}</strong> - <strong>{end_at}</strong></p>
                     </div>
                 )}
@@ -19,4 +19,4 @@ function Education({title, educations}) {
     );
 }
 
-export default Education;
+export default Experiences;
