@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-[#181818] text-white;
+    @apply text-[#181818];
 }
 
 .left-side {
