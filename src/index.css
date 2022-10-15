@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@100;200;300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply text-[#181818];
+    @apply text-[#181818] tracking-wide;
+    font-family: 'Mukta', sans-serif;
 }
 
 .left-side {
@@ -35,11 +38,11 @@ body {
 }
 
 .right .section-title {
-    @apply md:text-xl text-lg uppercase font-bold underline underline-offset-8 w-[20%];
+    @apply md:text-xl text-lg uppercase font-bold underline underline-offset-8 w-[20%] ;
 }
 
 .section-container {
-    @apply flex  items-baseline justify-start gap-20 mb-10;
+    @apply flex  items-baseline justify-start gap-20 mb-10 hover:bg-[#eeeeee] rounded-md p-3;
 }
 
 .right-inner .content {
@@ -47,7 +50,7 @@ body {
 }
 
 .right-inner .content > p {
-    @apply mb-3 font-medium;
+    @apply mb-2;
 }
 
 /*.right .section-title::after {*/
@@ -63,5 +66,19 @@ body {
 }
 
 .start-end-date {
-    @apply text-sm font-light;
+    @apply text-sm font-light text-gray-700;
 }
+
+.text-gradient {
+    background: linear-gradient(90.13deg, #1C7CE0 .11%, #150051 25.06%, #1C7CE0 50%, #86bff2 74.8%, #150051 99.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.job-pls {
+    background: -webkit-linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
