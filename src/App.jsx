@@ -62,16 +62,10 @@ function App() {
                                         />
                                     </NewSection>
                                     <NewSection>
-                                        {data.projects.projects_details.map((project, index) =>
-                                            <Projects
-                                                key={index}
-                                                title={data.projects.title}
-                                                projectName={data.projects.projects_details.map(section => section.name)}
-                                                description={data.projects.projects_details.map(section => section.description)}
-                                                link={data.projects.projects_details.map(section => section.link)}
-                                            />
-                                        )}
-
+                                        <Projects
+                                            title={data.projects.title}
+                                            projects={data.projects.projects_details}
+                                        />
                                     </NewSection>
                                 </div>
                             </div>

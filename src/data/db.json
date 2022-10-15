@@ -78,6 +78,12 @@
             "name": "Zip code filter for Casablanca Addresses",
             "description": "simple react app of fetching data",
             "link": "#"
+          },
+          {
+            "id": 2,
+            "name": "abdelalikabou.me my portfolio",
+            "description": "simple react app",
+            "link": "https://abdelalikabou.me"
           }
         ]
       }
