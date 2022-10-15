@@ -4,9 +4,9 @@ function Education({title, educations}) {
     return (
         <>
         <h1 className="text-gradient section-title">{title}</h1>
-            <div className="w-full">
+        <div className="w-full divide-y divide-dashed">
                 {educations && educations.map(({title, school_name, start_at, end_at}, index) =>
-                    <div className="grow-1 content"
+                    <div className="grow-1 content py-2"
                          key={index}
                     >
                         <p className="font-bold ">{title}</p>

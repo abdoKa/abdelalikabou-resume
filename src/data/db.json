@@ -50,13 +50,19 @@
           "title": "Bachelor of Java/JEE development",
           "school_name": "University Hassan I Settat - Faculty of Science and Technology of Settat",
           "start_at": "1st Sept",
-          "end_at": "29 Jul"
+          "end_at": "29 Jul 2021"
         },
         {
           "title": "Diploma in computer science.",
           "school_name": "Specialized Institute of Applied Technology Polo - OFPPT",
+          "start_at": "1st Sept 2018",
+          "end_at": "01 Jul 2018"
+        },
+        {
+          "title": "Heigh School Diploma",
+          "school_name": "Ben M'sik high school ",
           "start_at": "1st Sept",
-          "end_at": "01 Jul"
+          "end_at": "30 Jul 2017"
         }
       ]
     },
@@ -66,6 +72,13 @@
         {
           "company": "Leadz - Casablanca",
           "job_title": "Full-Stack Developer",
+          "job_details": [
+            "Fixing Bugs on AEM platform for Stellantis's, using JS",
+            "Developed and maintained code for Leadz and client websites primarily using HTML, CSS, Tailwind, JavaScript, and React",
+            "Building web apps using Third-party APIs with ReactJS,TS/NextJS",
+            "Build responsive newsletters",
+            "Fix wordpress plugins and templates designs"
+          ],
           "start_at": "1st Mar 2020",
           "end_at": "Present"
         }
@@ -75,22 +88,16 @@
       "title": "Projects",
       "projects_details": [
         {
-          "id": 1,
-          "name": "Zip code filter for Casablanca Addresses",
-          "description": "simple react app of fetching data",
-          "link": "#"
-        },
-        {
           "id": 2,
           "name": "abdelalikabou.me my portfolio",
-          "description": "simple react app",
+          "description": "My upcoming portfolio",
           "link": "https://abdelalikabou.me"
         }
       ]
     },
     "get_in_touch": {
       "github": "https://github.com/abdoKa",
-      "linkedin":"https://www.linkedin.com/in/abdelali-kabou-6638931b8/"
+      "linkedin": "https://www.linkedin.com/in/abdelali-kabou-6638931b8/"
     },
     "resume_pdf_link": "/src/assets/pdf/kabou-abdelali-resume.pdf"
   }
