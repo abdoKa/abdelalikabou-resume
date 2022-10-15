@@ -9,9 +9,6 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 
-.left-side {
-    @apply fixed h-full float-left overflow-hidden;
-}
 
 .bg-me {
     background: url("../src/assets/me.jpg");
@@ -30,19 +27,26 @@ body {
 }
 
 .left {
-    @apply w-1/2 h-full float-left text-center overflow-hidden fixed;
+    @apply md:w-1/2 w-full h-screen float-left text-center overflow-hidden md:fixed sm:block;
+}
+.left-inner {
+    @apply absolute top-[75%] left-1/2 -translate-y-[75%] -translate-x-1/2 w-full text-white;
+}
+
+.left-inner h1{
+    @apply font-semibold text-2xl;
 }
 
 .right {
-    float: right;
+    @apply float-right;
 }
 
 .right .section-title {
-    @apply md:text-xl text-lg uppercase font-bold underline underline-offset-8 w-[20%] ;
+    @apply md:text-xl text-lg uppercase font-bold underline underline-offset-8 md:w-[20%] w-full ;
 }
 
 .section-container {
-    @apply flex  items-baseline justify-start gap-20 mb-10 hover:bg-[#eeeeee] rounded-md p-3;
+    @apply flex md:flex-row flex-col sm:gap-20 gap-3 items-baseline justify-start  mb-10 hover:bg-[#eeeeee] rounded-md p-3;
 }
 
 .right-inner .content {
@@ -58,7 +62,7 @@ body {
 /*}*/
 
 .left, .right {
-    @apply w-1/2 inline-block align-top;
+    @apply md:w-1/2 sm:w-full md:inline-block sm:block align-top;
 }
 
 .left-inner, .right-inner {
@@ -80,5 +84,9 @@ body {
     background: -webkit-linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.resume-link {
+    @apply rounded-lg p-5 block mx-auto text-center w-fit bg-[#eeeeee] uppercase;
 }
 

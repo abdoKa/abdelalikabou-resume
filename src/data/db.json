@@ -87,6 +87,11 @@
           "link": "https://abdelalikabou.me"
         }
       ]
-    }
+    },
+    "get_in_touch": {
+      "github": "https://github.com/abdoKa",
+      "linkedin":"https://www.linkedin.com/in/abdelali-kabou-6638931b8/"
+    },
+    "resume_pdf_link": "/src/assets/pdf/kabou-abdelali-resume.pdf"
   }
 }
