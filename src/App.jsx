@@ -11,7 +11,7 @@ import ResumePdf from "./components/Buttons/ResumePdf.jsx";
 
 function App() {
     const {data, isLoading, isError} = useQuery(['my-resume'], getMyResume);
-
+    
     return (
         <main>
             {isLoading
