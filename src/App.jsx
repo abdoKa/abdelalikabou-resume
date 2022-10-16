@@ -75,7 +75,7 @@ function App() {
                                             projects={data.projects.projects_details}
                                         />
                                     </NewSection>
-                                    <ResumePdf label="Grab a PDF of my full resume" link={data.resume_pdf_link}/>
+                                    <ResumePdf label="Grab a PDF of my full resume" link="/kabou-abdelali-resume.pdf"/>
 
                                 </div>
                             </div>
