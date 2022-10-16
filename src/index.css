@@ -50,7 +50,7 @@ body {
 }
 
 .right-inner .content {
-    @apply text-lg text-justify;
+    @apply text-lg md:text-justify text-left;
 }
 
 .right-inner .content > p {
